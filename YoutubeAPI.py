@@ -57,12 +57,6 @@ class YoutubeAPI:
             continue
         return available_videos
 
-    def _link_title_list(self, video_informations):
-        link_list = {}
-        for (key, title) in enumerate(video_informations, start = 1):
-            link_list[key] = title
-        return link_list
-
     def _organized_videos_list(self, video_informations):
         organized_list = {}
         for (key, title) in enumerate(video_informations, start = 1):
